@@ -1,6 +1,9 @@
-<svg id="lines-accents" viewBox="0 0 1440 457" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path opacity="0.4" d="M-107.5 87.1457C499 106.646 997.8 -16.3543 1583 5.64572" stroke="currentColor" stroke-width="5"/>
-    <path opacity="0.4" d="M-107 157.301C659.5 187.646 964 27.6457 1583 16.1457" stroke="currentColor" stroke-width="5"/>
-    <path opacity="0.4" d="M-107 270.05C659.5 333.146 990 55.1457 1584 35.6457" stroke="currentColor" stroke-width="5"/>
-    <path opacity="0.4" d="M-122 431.05C404.5 550 812 178.146 1587.5 76.1457" stroke="currentColor" stroke-width="5"/>
+<svg id="lines-accents" viewBox="0 0 4000 532" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-12 80C593.5 103 596.345 101.395 1157 114.5C2155.16 137.831 2255 0 4000 0" stroke="currentColor"
+          stroke-width="5"/>
+    <path d="M-0.5 163C609 168.5 840 240 1327 240C2164 240 2329 35 3998.5 14" stroke="currentColor" stroke-width="5"/>
+    <path d="M-0.5 236.5C574 256 824.5 379 1414.5 359C2390.49 325.916 2456.5 53 4000 33" stroke="currentColor"
+          stroke-width="5"/>
+    <path d="M-34.5 322.5C605.5 359 1106.69 626.151 1794 461C2424.5 309.5 2830 57.5 4000 57.5" stroke="currentColor"
+          stroke-width="5"/>
 </svg>
