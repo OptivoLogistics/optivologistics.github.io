@@ -1,0 +1,22 @@
+:root {
+    --font-family: "Lato", sans-serif;
+    --font-size: 18px;
+    --font-size-medium: 24px;
+    --font-size-big: 32px;
+    --letter-spacing: 0;
+
+    --color-text: white;
+    --color-theme: #01091E;
+    /*--color-background: linear-gradient(323.79deg, rgba(255, 255, 255, 0) 21.13%, rgba(255, 255, 255, 0.06) 49.1%, rgba(255, 255, 255, 0) 78.87%), #031421;*/
+    --color-background: linear-gradient(323.79deg, rgba(255, 255, 255, 0) 21.13%, rgba(255, 255, 255, 0.06) 49.1%, rgba(255, 255, 255, 0) 78.87%), var(--color-theme);
+    --color-theme-quiet: #3E5B88;
+    --color-error: #DC4343;
+    --color-success: #25C88D;
+
+    --default-section-margin: 100px;
+    --shadow-out: 1px 3px 4px rgba(0, 0, 0, 0.25);
+
+    --shadow-in: inset var(--shadow-out);
+
+    --default-max-width: 1000px;
+}

@@ -1,0 +1,41 @@
+button {
+    border: none;
+    font-family: inherit;
+    font-size: var(--font-size);
+    outline: none;
+    cursor: pointer;
+}
+
+.button-cta {
+    white-space: nowrap;
+
+    --color-hover: var(--color-text);
+    display: flex;
+    padding: 10px 40px;
+    box-shadow: var(--shadow-out);
+    border: 1px transparent solid;
+    background: var(--color-text);
+    color: var(--color-theme);
+
+    transition-property: background-color, color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .1s;
+}
+
+.button-cta:hover {
+    background: none;
+    color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+.button-cta:active {
+    --color-hover: var(--color-theme-quiet);
+}
+
+.button-cta.success {
+    background: var(--color-success);
+}
+
+.button-cta.fail {
+    background: var(--color-error);
+}
