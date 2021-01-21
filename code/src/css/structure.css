@@ -1,0 +1,190 @@
+#page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+
+    height: 60px;
+}
+
+.description {
+    max-width: var(--default-max-width);
+}
+
+.description > *:not(:first-child) {
+    margin-top: var(--default-section-margin);
+}
+
+.container {
+    display: flex;
+    --container-margin: 0 0 0 var(--default-section-margin);
+}
+
+.container.--vertical {
+    flex-direction: column;
+    --container-margin: var(--default-section-margin) 0 0 0;
+}
+
+.container > *:not(:first-child) {
+    margin: var(--container-margin);
+}
+
+.icon {
+    width: 30px;
+}
+
+#main-logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 200px;
+    width: 100%;
+}
+
+#main-logo > .icon {
+    width: 100px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > *:not(:first-child) {
+    margin-top: calc(var(--default-section-margin) / 2);
+}
+
+.content > .content-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --element-margin: 0 0 0 var(--default-section-margin);
+}
+
+.content.--vertical > .content-text {
+    flex-direction: column;
+    --element-margin: var(--default-section-margin) 0 0 0;
+}
+
+.content > .content-text > *:not(:first-child) {
+    margin: var(--element-margin);
+}
+
+.content-text > p {
+    max-width: 410px;
+}
+
+.content-text > p:first-child {
+    text-align: right;
+}
+
+.content.--vertical > .content-text > p {
+    text-align: center;
+}
+
+#main-in-circle {
+    position: relative;
+    --circle-accent-top: -100px;
+    margin-top: calc(200px - var(--circle-accent-top));
+    --circle-accent-fill: none;
+
+    color: var(--color-text);
+}
+
+#secondary {
+    margin: 600px 0 300px 0;
+}
+
+#secondary .--horizontal > *:not(:first-child) {
+    margin-left: 50px;
+}
+
+#page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid var(--color-text);
+
+    overflow: hidden;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-logo *:not(:first-child) {
+    margin-top: 10px;
+}
+
+#footer-content {
+    padding: 30px 150px;
+
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-menu {
+    display: flex;
+}
+
+#footer-menu > *:not(:first-child) {
+    margin-left: 60px;
+}
+
+#footer-menu > .footer-menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-list > *:not(:first-child) {
+    margin-top: 6px;
+}
+
+.hoverable {
+    transition-property: box-shadow, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+.hoverable:hover {
+    box-shadow: var(--shadow-out);
+    transform: scale(1.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form > *:not(:first-child) {
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
