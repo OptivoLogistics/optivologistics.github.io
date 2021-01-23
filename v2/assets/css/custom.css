@@ -1,0 +1,21 @@
+#header-logo {
+    height: 30px;
+    width: 20px;
+    margin: 5px 0;
+}
+
+#main-logo{
+    width: 100px;
+}
+
+button{
+    outline: none;
+}
+
+#cta > .inner{
+    align-items: center;
+}
+
+#contact-form{
+    padding-top: 0em;
+}
