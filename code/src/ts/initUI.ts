@@ -14,7 +14,7 @@ popup.on('click', event => {
     }
 });
 
-$('.input-field').on('click', () => {
+$('.input-field').on('change', () => {
     $(this).removeClass('incomplete');
 });
 
