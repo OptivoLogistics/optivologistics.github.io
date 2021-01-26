@@ -4,18 +4,92 @@
     margin: 5px 0;
 }
 
-#main-logo{
+#main-logo {
     width: 100px;
 }
 
-button{
+button {
     outline: none;
 }
 
-#cta > .inner{
+#cta {
+    padding-bottom: 0;
+}
+
+#cta > .inner {
+    flex-direction: column;
     align-items: center;
 }
 
-#contact-form{
-    padding-top: 0em;
+#contact-form {
+    padding-top: 0;
+}
+
+.wrapper.style4 {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/furgone-2.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/furgone-2.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/furgone-2.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/furgone-2.jpg");
+}
+
+
+.circle-loader {
+    box-sizing: border-box;
+    --size: 25px;
+    --path-size: 4px;
+    --color-theme: #ed4933;
+    height: var(--size);
+    width: var(--size);
+
+    border: var(--path-size) solid transparent;
+    border-top: var(--path-size) solid var(--color-theme);
+    border-radius: 100%;
+
+    animation: spin 1s ease-in-out infinite;
+
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-loader.toggled {
+    display: block;
+}
+
+.circle-loader:last-child {
+    margin-left: 1em;
+}
+
+#form-submit {
+    display: flex;
+    align-items: center;
+}
+
+.form-required {
+    outline: 2px solid transparent;
+}
+
+.form-required.incomplete {
+    outline-color: #bf1d1d !important;
+}
+
+#form-submit input[type="submit"].success {
+    background-color: #25cf85;
+    color: #01091E;
+}
+
+#form-submit input[type="submit"].fail {
+    background-color: #bf1d1d;
+    color: #01091E;
+}
+
+input[type="submit"] {
+    outline: none;
 }
