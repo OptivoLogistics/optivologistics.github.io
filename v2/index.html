@@ -11,6 +11,16 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
+
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            const userID = 'user_faxyoGh7FOwheK99BWnpx';
+            emailjs.init(userID);
+        })();
+    </script>
+
 </head>
 <body class="landing is-preload">
 
@@ -35,7 +45,9 @@
                 <div>Optivo</div>
             </h2>
             <h3 lang="it">Organizza i tuoi mezzi e risparmia tempo e costi</h3>
-            <button class="button primary" lang="it">Prova gratuitamente</button>
+            <ul class="actions special">
+                <li><a href="#cta" class="button primary" lang="it">Prova gratuitamente</a></li>
+            </ul>
 
         </div>
         <a href="#one" class="more scrolly" lang="it">Scopri di più</a>
@@ -51,7 +63,9 @@
                     percorsi per la tua flotta, <br>in modo tale che tu possa ridurre i costi e aumentare i profitti.
                 </p>
             </header>
-            <button class="button primary" lang="it">Prova gratuitamente</button>
+            <ul class="actions special">
+                <li><a href="#cta" class="button primary" lang="it">Prova gratuitamente</a></li>
+            </ul>
         </div>
     </section>
 
@@ -76,7 +90,7 @@
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="images/customer.png" alt=""/></div>
+            <div class="image"><img src="images/highway.png" alt=""/></div>
             <div class="content">
                 <h2 lang="it">3.Utilizzo</h2>
                 <p lang="it">Ogni giorno potrai richiedere nuove rotte. Una volta ricevuti i dati, calcoliamo il
@@ -117,57 +131,54 @@
     <!-- CTA -->
     <section id="cta" class="wrapper style4">
         <div class="inner">
-            <header>
-                <h2 lang="it">Mettici alla prova. È gratis</h2>
-                <p lang="it">Diventiamo partner e scopri quanto puoi risparmiare richiedendo una settimana di prova
-                    gratuita. Se
-                    sarai soddisfatto pagherai il costo di un caffè al giorno.</p>
-            </header>
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary" lang="it">Prova gratuitamente</a></li>
-            </ul>
+            <h2 lang="it">Mettici alla prova. È gratis</h2>
+            <p lang="it">Diventiamo partner e scopri quanto puoi risparmiare richiedendo una settimana di prova
+                gratuita. Se sarai soddisfatto pagherai il costo di un caffè al giorno.</p>
         </div>
-    </section>
-
-    <section id="contact-form" class="wrapper style4">
         <div class="inner">
-            <form method="post" action="#">
+            <form method="post" class="contact-form">
                 <div class="row gtr-uniform">
                     <div class="col-6 col-12-xsmall">
-                        <input type="text" name="demo-name" id="demo-name" value="" lang="it" placeholder="Nome"/>
+                        <input type="text" class="form-required" name="user_name" value="" lang="it"
+                               placeholder="Nome"/>
                     </div>
                     <div class="col-6 col-12-xsmall">
-                        <input type="email" name="demo-email" id="demo-email" value="" lang="it" placeholder="Email"/>
+                        <input type="email" class="form-required" name="user_email" value="" lang="it"
+                               placeholder="Email"/>
                     </div>
                     <div class="col-12">
-                    <textarea name="demo-message" id="demo-message" lang="it"
+                    <textarea name="user_message" class="form-required" lang="it"
                               placeholder="Un breve messaggio introduttivo"
                               rows="6"></textarea>
                     </div>
                     <div class="col-12">
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="primary"/></li>
-                            <li><input type="reset" value="Reset"/></li>
-                        </ul>
+                        <div id="form-submit" class="actions">
+                            <input type="submit" lang="it" value="Contattaci" class="button primary"
+                                   style="width: 100%"/>
+                            <div class="circle-loader"></div>
+
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons" style="display: none">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="mailto:optivologistics@gmail.com" class="icon solid fa-envelope"><span
+                        class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Optivo group</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; Optivo group</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </footer>
 
 </div>
 
@@ -179,6 +190,7 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script type="text/javascript" src="./assets/js/contactForm.js"></script>
 
 </body>
 </html>
