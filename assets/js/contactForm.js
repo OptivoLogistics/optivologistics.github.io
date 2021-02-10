@@ -32,7 +32,7 @@ function sendEmail(form) {
     const submit = form.find('input[type="submit"]');
     submit.removeClass(['success', 'fail']);
     const asElement = form[0];
-    emailjs.sendForm('contact_service', 'contact_form', asElement)
+    emailjs.sendForm('service_d8w6vu8', 'template_p36o0xq', asElement)
         .then(function () {
             submit.addClass('success');
         }, function (error) {
