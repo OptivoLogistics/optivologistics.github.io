@@ -93,3 +93,16 @@ button {
 input[type="submit"] {
     outline: none;
 }
+
+.language-tag {
+    opacity: 0.8;
+    padding: 0 1em !important;
+}
+
+.language-tag.--active {
+    opacity: 1;
+}
+
+.language-tag:hover {
+    opacity: 1;
+}

@@ -1,3 +1,8 @@
+(function () {
+    const userID = 'user_j2e4lj7DPeVq3VlUbaMnS';
+    emailjs.init(userID);
+})();
+
 //Init forms
 $('.contact-form').on('submit', event => {
     event.preventDefault();
