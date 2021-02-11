@@ -32,7 +32,6 @@ button {
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/furgone-2.jpg");
 }
 
-
 .circle-loader {
     box-sizing: border-box;
     --size: 25px;
@@ -94,9 +93,24 @@ input[type="submit"] {
     outline: none;
 }
 
+#nav {
+    display: flex;
+    align-items: center;
+}
+
 .language-tag {
     opacity: 0.6;
-    padding: 0 1em !important;
+    padding: 0 0.5em !important;
+
+    display: flex;
+    align-items: center;
+
+    border: none;
+}
+
+.language-tag .icon {
+    width: 2em;
+    height: 2em;
 }
 
 .language-tag.--active {
