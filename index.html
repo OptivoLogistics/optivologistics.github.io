@@ -5,37 +5,59 @@
     <title>Optivo | Ottimizzazione logistica</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56J5JMGDN8"></script>
+    <script>
+        const managementId = 'G-56J5JMGDN8';
+        window.dataLayer = window.dataLayer || [];
 
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/custom.css"/>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    <link rel="icon" href="./images/favicon.png">
-
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
-    </noscript>
-
+        gtag('js', new Date());
+        gtag('config', managementId);
+        gtag('get', managementId, 'client_id', (clientID) => {
+            fetch(`${window.location.origin}/landingPageAlias?alias=${window.location.pathname}&client_id=${clientID}`)
+                .then();
+        });
+    </script>
 </head>
-<body class="landing is-preload">
+<body class="landing is-preload" style="background: #2e3842">
+
+<div id="main-loader"
+     style="position: absolute; top:0; left: 0;
+     width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;
+    color: white">
+    <svg class="icon">
+        <use href="./images/svg/optivo.svg#optivo"></use>
+    </svg>
+</div>
 
 <!-- Page Wrapper -->
-<div id="page-wrapper">
+<div id="page-wrapper" style="display: none">
     <!-- Header -->
     <header id="header" class="alt">
-        <h1><a href="index.html">
+        <h1><a href="#">
             <svg id="header-logo" class="icon">
-                <use href="./images/svg/optivo.svg#optivo-logo"></use>
+                <use href="./images/svg/optivo.svg#optivo"></use>
             </svg>
         </a></h1>
 
         <nav id="nav">
-            <a href="./en/index.html" class="language-tag ">
-                EN
-            </a>
-
-            <a href="" class="language-tag --active">
-                IT
-            </a>
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="/dashboard">Area riservata</a></li>
+                            <li style="display: flex">
+                                <a href="" class="language-tag --active">IT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -44,13 +66,13 @@
         <div class="inner">
             <h2 id="main-title">
                 <svg id="main-logo" class="icon">
-                    <use href="./images/svg/optivo.svg#optivo-logo"></use>
+                    <use href="./images/svg/optivo.svg#optivo"></use>
                 </svg>
                 <div>Optivo</div>
             </h2>
             <h3 lang="it">Organizza i tuoi mezzi e risparmia tempo e costi</h3>
             <ul class="actions special">
-                <li><a href="#cta" class="button primary" lang="it">Prova gratuitamente</a></li>
+                <li><a href="/dashboard" class="button primary" lang="it">Prova gratuitamente</a></li>
             </ul>
 
         </div>
@@ -68,7 +90,7 @@
                 </p>
             </header>
             <ul class="actions special">
-                <li><a href="#cta" class="button primary" lang="it">Prova gratuitamente</a></li>
+                <li><a href="/dashboard" class="button primary" lang="it">Prova gratuitamente</a></li>
             </ul>
         </div>
     </section>
@@ -97,7 +119,8 @@
             <div class="image"><img src="images/highway.jpg" alt=""/></div>
             <div class="content">
                 <h2 lang="it">3.Utilizzo</h2>
-                <p lang="it">Inserisci i dati sulla nostra webapp, e al resto pensa Optivo. Grazie al miglior algoritmo sul mercato, puoi
+                <p lang="it">Inserisci i dati sulla nostra webapp, e al resto pensa Optivo. Grazie al miglior algoritmo
+                    sul mercato, puoi
                     richiedere rotte istantaneamente, con un semplice click.</p>
             </div>
         </section>
@@ -182,20 +205,12 @@
 </div>
 
 <!-- Scripts -->
-
 <script src="https://kit.fontawesome.com/363a074d9d.js" crossorigin="anonymous"></script>
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="./assets/js/breakpoints.min.js"></script>
+<script src="./assets/js/browser.min.js"></script>
 
 <!--EmailJS-->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript" src="./assets/js/contactForm.js"></script>
 
 </body>
 </html>

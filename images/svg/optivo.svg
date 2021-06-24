@@ -1,5 +1,5 @@
-<svg id="optivo-logo" viewBox="0 0 435 637" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg id="optivo" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M353.891 134.898L434.486 537.872C434.486 670.035 0.51416 668.518 0.51416 537.872H0.514404L70.3631 188.628L124.093 457.279L215.434 0.573792L298.095 413.877L353.891 134.898Z"
+          d="M22.508 9.30567L27.6414 34.9727H27.6414C27.6414 43.3907 4.95911e-05 43.2941 0 34.9727L4.44895 12.7279L7.87126 29.8395L13.6892 0.75L18.9541 27.0749L22.508 9.30567Z"
           fill="currentColor"/>
 </svg>
